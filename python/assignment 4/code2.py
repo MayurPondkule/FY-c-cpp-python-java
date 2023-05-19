@@ -1,0 +1,8 @@
+f = open("friends.txt") 
+l = f.readline() 
+l2 = f.readline(18) 
+ch3=f.read(10) 
+print(l2) 
+print(ch3) 
+print(f.readline()) 
+f.close()

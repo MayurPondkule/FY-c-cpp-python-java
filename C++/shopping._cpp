@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main()
+{   
+    int pastries,cakes,cupcakes,amount,bill,customer,i;
+    printf("Enter the no of customers\n");
+    scanf("%d",&customer);
+    for(i=0 ;i<customer ;i++)
+    {
+    printf("enter the no. of pastries that you want to buy=\n");
+    scanf("%d",&pastries);
+    
+    printf("Enter the no. of cakes you want to buy=\n");
+    scanf("%d",&cakes);
+    
+    printf("enter the no. of cupcakes that you want to buy=\n");
+    scanf("%d",&cupcakes);
+    
+   
+    amount=(pastries*500)+(cakes*1000)+(cupcakes*200);
+    if(amount>200)
+    {
+     
+         if(amount>500)
+         {
+               if(amount>1000)
+               {bill= (amount-(0.5*amount));
+               printf("your total bill is =\n");
+               printf("%d",bill);
+               }
+      
+               else
+               {bill= (amount-(0.3*amount));
+               printf("your total bill is =\n");
+               printf("%d",bill);
+               }
+       
+         }
+         else
+         {bill= (amount-(0.1*amount));
+         printf("your total bill is =\n");
+         printf("%d",bill);
+         }
+     
+    }
+    else
+    { 
+    printf("Sorry you will not get any discount\n");
+    printf("thanks for shopping\n");
+    }
+    
+}
+    return 0;
+}
